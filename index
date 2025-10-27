@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demo de Accesibilidad</title>
+</head>
+<body>
+
+<a href="#contenido">Saltar al contenido</a>
+
+<header role="banner">
+<h1>Accesibilidad Web</h1>
+<nav role="navigation" aria-label="menu principal">
+<ul>
+<li><a href="#contenido">Inicio</a></li>
+<li><a href="#imagenes">Imágenes</a></li>
+<li><a href="#formulario">Formulario</a></li>
+</ul>
+</nav>
+</header>
+
+<main id="contenido" role="main">
+<h2>Qué es esto</h2>
+<p>Esta es una demostración sencilla sobre accesibilidad en páginas web.</p>
+
+<ul>
+<li>Uso de roles ARIA</li>
+<li>Texto alternativo en imágenes</li>
+<li>Uso correcto de etiquetas label</li>
+<li>Navegación por teclado</li>
+</ul>
+
+<section id="imagenes">
+<h3>Ejemplo de imágenes</h3>
+<p>Imagen con descripción:</p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs3P2xFrqYVEf_mnPe15I8PXHvyVnXZSAmfA&s" alt="Paisaje con montañas y lago">
+</section>
+
+<hr>
+
+<section id="formulario">
+<h3>Formulario de contacto</h3>
+<form>
+<fieldset>
+<legend>Información básica</legend>
+
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre" aria-required="true" required>
+
+<br>
+
+<label for="correo">Correo:</label>
+<input type="email" id="correo" name="correo" aria-required="true" required>
+
+<br>
+
+<button type="submit">Enviar</button>
+</fieldset>
+</form>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+<p>© 2025 Ejemplo Accesibilidad Web</p>
+</footer>
+
+</body>
+</html>
